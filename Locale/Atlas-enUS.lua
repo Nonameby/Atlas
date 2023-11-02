@@ -319,7 +319,10 @@ AL:RegisterTranslations("enUS", function() return {
 	["Colonel Zerran"] = true;
 	["Safe Room"] = true;
 	["Class Books"] = true;
-	
+
+	--Emerald Sanctum -- TurtleWOW 1.17.0
+	["Favor of Erennius (ES Hard Mode)"] = true;
+
 	--****************************
 	-- Eastern Kingdoms Instances
 	--****************************
@@ -517,7 +520,10 @@ AL:RegisterTranslations("enUS", function() return {
 	["Zealot Lor'Khan"] = true;
 	["Muddy Churning Waters"] = true;
 	["Jinxed Hoodoo Pile"] = true;
-	["ZG Enchants"] = true;		
+	["ZG Enchants"] = true;	
+
+	--Lower Karazhan Halls --TurtleWOW 1.17.0
+	["LKH Enchants"] = true;	
 	
 	--************************************************
 	-- Instance Entrance Maps

@@ -1,4 +1,15 @@
 AddOn: Atlas
+
+Version: 1.13.1
+Last Update: 11(November).02(2nd).2023
+
+Maps for all dungeons/raids, including Black Morass, Hateforge Quarry, Gilneas City, Lower Karazhan Halls, Emerald Sanctum(got lazy here).
+Added an option to check updates for new version in the future. Unfortunately previous version doesnt have that option so spread out the word about available update:
+https://forum.turtle-wow.org/viewtopic.php?t=7958
+
+
+
+
 Version: 1.13.0 TurtleWOW Edition
 Last Update: 24.06.2023
 Shahopriest

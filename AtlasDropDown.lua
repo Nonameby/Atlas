@@ -88,8 +88,10 @@ Atlas_DropDownLayouts = {
 			"BlackrockSpireUpper",
 			"BlackwingLair",
 			"Gnomeregan",
+			"GilneasCity", -- TurtleWOW 1.17.0
 			"HateforgeQuarry", -- TurtleWOW
 			"KarazhanCrypt", -- TurtleWOW
+			"LowerKara", -- -- TurtleWOW 1.17.0
 			"MoltenCore",
 			"Naxxramas",
 			"Scholomance",
@@ -113,6 +115,7 @@ Atlas_DropDownLayouts = {
 			"DireMaulEast",
 			"DireMaulNorth",
 			"DireMaulWest",
+			"EmeraldSanctum", -- TurtleWOW 1.17.0
 			"Maraudon",
 			"OnyxiasLair",
 			"RagefireChasm",
@@ -172,6 +175,7 @@ Atlas_DropDownLayouts = {
 			"DireMaulEnt",
 			"DireMaulNorth",
 			"DireMaulWest",
+			"GilneasCity", -- TurtleWOW 1.17.0
 			"HateforgeQuarry", -- TurtleWOW
 			"Scholomance",
 			"Stratholme",
@@ -198,6 +202,7 @@ Atlas_DropDownLayouts = {
 		[ATLAS_DDL_PARTYSIZE_10] = {
 			"BlackrockSpireLower",
 			"BlackrockSpireUpper",
+			"LowerKara", -- -- TurtleWOW 1.17.0
 		},
 		[ATLAS_DDL_PARTYSIZE_20] = {
 			"TheRuinsofAhnQiraj",
@@ -205,6 +210,7 @@ Atlas_DropDownLayouts = {
 		},
 		[ATLAS_DDL_PARTYSIZE_40] = {
 			"BlackwingLair",
+			"EmeraldSanctum", -- TurtleWOW 1.17.0
 			"MoltenCore",
 			"Naxxramas",
 			"OnyxiasLair",
@@ -261,6 +267,7 @@ Atlas_DropDownLayouts = {
 			"DireMaulNorth",
 			"DireMaulWest",
 			"Gnomeregan",
+			"GilneasCity", -- TurtleWOW 1.17.0
 			"HateforgeQuarry", -- TurtleWOW
 			"KarazhanCrypt", -- TurtleWOW
 			"Maraudon",
@@ -286,6 +293,8 @@ Atlas_DropDownLayouts = {
 			"BlackwingLair",
 			"BlackrockSpireLower",
 			"BlackrockSpireUpper",
+			"EmeraldSanctum", -- TurtleWOW 1.17.0
+			"LowerKara", -- -- TurtleWOW 1.17.0
 			"MoltenCore",
 			"Naxxramas",
 			"OnyxiasLair",
@@ -343,8 +352,10 @@ Atlas_DropDownLayouts = {
 			"DireMaulEast",
 			"DireMaulNorth",
 			"DireMaulWest",
+			-- "GilneasCity", -- TurtleWOW 1.17.0
 			"Gnomeregan",
 			"HateforgeQuarry", -- TurtleWOW
+			--"KarazhanCrypt", -- TurtleWOW
 			"Maraudon",
 			"TheDeadmines",
 			"RagefireChasm",
@@ -368,6 +379,8 @@ Atlas_DropDownLayouts = {
 			"BlackwingLair",
 			"BlackrockSpireLower",
 			"BlackrockSpireUpper",
+			"EmeraldSanctum", -- TurtleWOW 1.17.0
+			"LowerKara", -- -- TurtleWOW 1.17.0
 			"MoltenCore",
 			"Naxxramas",
 			"OnyxiasLair",
@@ -495,7 +508,9 @@ Atlas_DropDownLayouts = {
 			"ShadowfangKeep",
 			"BlackfathomDeeps",
 			--"CavernsOfTimeBlackMorass", -- TurtleWOW
+			--"EmeraldSanctum", -- TurtleWOW 1.17.0
 			"TheStockade",
+			--"GilneasCity", -- TurtleWOW 1.17.0
 			"Gnomeregan",
 			"RazorfenKraul",
 			"SMGraveyard",
@@ -519,6 +534,7 @@ Atlas_DropDownLayouts = {
 			"BlackrockSpireLower",
 			"BlackrockSpireUpper",
 			"ZulGurub",
+			--"LowerKara", -- -- TurtleWOW 1.17.0
 			"TheRuinsofAhnQiraj",
 			"MoltenCore",
 			"OnyxiasLair",

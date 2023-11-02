@@ -7,11 +7,11 @@
 ## Notes-zhCN: 副本地图浏览器
 ## Notes-esES: Navegador de Mapas de Mazmorras
 ## Notes-ruRU: Обозреватель подземелий
-## Version: 1.13.0 TurtleWOW Edition
-## X-Date: 24.06.2023
+## Version: 1.13.1
+## X-Date: 02.11.2023
 ## Author: Shahopriest
 ## X-Email: m4r3lk4@gmail.com
-## X-Website: 
+## X-Website: https://forum.turtle-wow.org/viewtopic.php?t=7958
 ## X-Category: Map
 ## X-OptionsFrame: AtlasOptionsFrame
 ## SavedVariables: AtlasOptions

@@ -29,6 +29,7 @@ local BabbleZone = AceLibrary("AceLocale-2.2"):new(MAJOR_VERSION)
 BabbleZone:RegisterTranslations("enUS", function()
 	return {
 		["Ahn'Qiraj"] = true,
+		["Alah'Thalas"] = true, --TurtleWOW
 		["Alterac Mountains"] = true,
 		["Alterac Valley"] = true,
 		["Arathi Basin"] = true,
@@ -38,6 +39,7 @@ BabbleZone:RegisterTranslations("enUS", function()
 		["Azshara"] = true,
 		["Badlands"] = true,
 		["The Barrens"] = true,
+		["The Black Morass"] = true, --TurtleWOW
 		["Black Morass"] = true, -- TurtleWOW
 		["Blackfathom Deeps"] = true,
 		["Blackrock Depths"] = true,
@@ -65,12 +67,15 @@ BabbleZone:RegisterTranslations("enUS", function()
 		["Eastern Kingdoms"] = true,
 		["Eastern Plaguelands"] = true,
 		["Elwynn Forest"] = true,
+		["Emerald Sanctum"] = true, -- TurtleWOW
 		["Everlook"] = true,
 		["Felwood"] = true,
 		["Feralas"] = true,
 		["The Forbidding Sea"] = true,
 		["Gadgetzan"] = true,
 		["Gates of Ahn'Qiraj"] = true,
+		["Gilneas"] = true, --TurtleWOW
+		["Gilneas City"] = true, --TurtleWOW
 		["Gnomeregan"] = true,
 		["The Great Sea"] = true,
 		["Grom'gol Base Camp"] = true,
@@ -81,9 +86,11 @@ BabbleZone:RegisterTranslations("enUS", function()
 		["Hyjal"] = true,
 		["Ironforge"] = true,
 		["Kalimdor"] = true,
+		["Karazhan"] = true, -- TurtleWOW
 		["Karazhan Crypt"] = true, -- TurtleWOW
 		["Loch Modan"] = true,
 		["Lower Blackrock Spire"] = true,
+		["Lower Karazhan Halls"] = true, -- TurtleWOW
 		["Maraudon"] = true,
 		["Menethil Harbor"] = true,
 		["Molten Core"] = true,
@@ -99,6 +106,10 @@ BabbleZone:RegisterTranslations("enUS", function()
 		["Redridge Mountains"] = true,
 		["Ruins of Ahn'Qiraj"] = true,
 		["Scarlet Monastery"] = true,
+		["Scarlet Monastery Cathedral"] = true, -- TurtleWOW
+		["Scarlet Monastery Armory"] = true, -- TurtleWOW
+		["Scarlet Monastery Library"] = true, -- TurtleWOW
+		["Scarlet Monastery Graveyard"] = true, -- TurtleWOW
 		["Scholomance"] = true,
 		["Searing Gorge"] = true,
 		["Shadowfang Keep"] = true,

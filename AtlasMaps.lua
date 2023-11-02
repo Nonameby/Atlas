@@ -202,7 +202,7 @@ AtlasMaps = {
 		Acronym = "SWV";
 		Location = { BZ["Stormwind City"], 1519 };
 		LevelRange = "60-60";
-		MinLevel = "55";
+		MinLevel = "58";
 		PlayerLimit = "5";
 		Continent = BZ["Eastern Kingdoms"];
 		{ BLUE.."A) "..AL["Entrance"] };
@@ -214,6 +214,58 @@ AtlasMaps = {
 		{ GREY.."5) "..BB["Volkan Cruelblade"], NPC, 80851 };
 		{ GREY.."6) "..AL["Arc'tiras"], NPC, 93107 };
 		{ GREY.."7) "..BB["Vault Armory Equipment"], OBJECT, 2010867 };
+	};
+		--GilneasCity TurtleWOW
+	GilneasCity = {
+		ZoneName = { BZ["Gilneas City"],  };
+		Acronym = "GC";
+		Location = { BZ["Gilneas"], };
+		LevelRange = "43-49";
+		MinLevel = "43";
+		PlayerLimit = "5";
+		Continent = BZ["Eastern Kingdoms"];
+		{ GREY.."1) "..BB["Matthias Holtz"], NPC, 61419 };
+		{ GREY.."2) "..BB["Packmaster Ragetooth"], NPC, 61420 };
+		{ GREY.."3) "..BB["Judge Sutherland"], NPC, 61421 };
+		{ GREY.."4) "..BB["Dustivan Blackcowl"], NPC, 61422 };
+		{ GREY.."5) "..BB["Marshal Magnus Greystone"], NPC, 61423 };
+		{ GREY.."6) "..BB["Horsemaster Levvin"], NPC, 61605 };
+		{ GREY.."7) "..BB["Harlow Family Chest"], OBJECT, 2020027 };
+		{ GREY.."8) "..BB["Genn Greymane"], NPC, 61418 };
+		{ GREY..INDENT..AL["Trash Mobs"] };
+	};
+		--LowerKara TurtleWOW
+	LowerKara = {
+		ZoneName = { BZ["Lower Karazhan Halls"],  };
+		Acronym = "LKH";
+		Location = { BZ["Deadwind Pass"], 41};
+		LevelRange = "58-60";
+		MinLevel = "58";
+		PlayerLimit = "10";
+		Continent = BZ["Eastern Kingdoms"];
+		{ GREY.."1) "..BB["Master Blacksmith Rolfen"], NPC, 61319 };
+		{ GREY.."2) "..BB["Brood Queen Araxxna"], NPC, 61221 };
+		{ GREY.."3) "..BB["Grizikil"], NPC, 61224 };
+		{ GREY.."4) "..BB["Clawlord Howlfang"], NPC, 61223 };
+		{ GREY.."5) "..BB["Lord Blackwald II"], NPC, 61222 };
+		{ GREY.."6) "..BB["Moroes"], NPC, 61226 };
+		{ GREY..INDENT..AL["Trash Mobs"] };
+		{ GREY..INDENT..AL["LKH Enchants"] };
+	};
+		--EmeraldSanctum TurtleWOW
+	EmeraldSanctum = {
+		ZoneName = { BZ["Emerald Sanctum"],  };
+		Acronym = "ES";
+		Location = { BZ["Hyjal"], };
+		LevelRange = "58-60";
+		MinLevel = "58";
+		PlayerLimit = "40";
+		Continent = BZ["Kalimdor"];
+		{ GREY.."1) "..BB["Erennius"], NPC, 60747 };
+		{ GREY.."2) "..BB["Solnius the Awakener"], NPC, 60748 };
+		{ GREY.."3) "..BB["Solnius the Awakener (Page 2)"], NPC, 60748 };
+		{ GREY.."4) "..AL["Favor of Erennius (ES Hard Mode)"], OBJECT, 2020042 };
+		{ GREY..INDENT..AL["Trash Mobs"] };
 	};
 	RazorfenKraul = {
 		ZoneName = { BZ["Razorfen Kraul"], 491 };
