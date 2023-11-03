@@ -191,10 +191,14 @@ AtlasMaps = {
 		{ BLUE.."A) "..AL["Entrance"] };
 		{ BLUE.."B) " };
 		{ GREY.."1) "..BB["Chronar"], NPC, 65113 };
-		{ GREY.."2) "..BB["Harbinger Aph'ygth"], NPC, 65114 };
-		{ GREY.."3) "..BB["Time-Lord Epochronos"], NPC, 65116 };
-		{ GREY.."4) "..BB["Antnormi"], NPC, 65125 };
-		{ GREY.."5) "..BB["Infinite Chromie"], NPC, 65121 };
+		{ GREY.."removed) "..BB["Harbinger Aph'ygth"], NPC, 65114 };
+		{ GREY.."2) "..BB["Epidamu"], NPC, 61575 };
+		{ GREY.."3) "..BB["Drifting Avatar of Sand"], NPC, 61316 };
+		{ GREY.."4) "..BB["Time-Lord Epochronos"], NPC, 65116 };
+		{ GREY.."5) "..BB["Mossheart"], NPC, 65124 };
+		{ GREY.."7) "..BB["Rotmaw"], NPC, 65122 };
+		{ GREY.."6) "..BB["Antnormi"], NPC, 65125 };
+		{ GREY..INDENT..AL["Trash Mobs"] };
 	};
 	--StormwindVault TurtleWOW
 	StormwindVault = {

@@ -291,7 +291,11 @@ BabbleBoss:RegisterTranslations("enUS", function()
 		-- CavernsOfTimeBlackMorass TurtleWOW
 		["Chronar"] = true,
 		["Harbinger Aph'ygth"] = true,
+		["Epidamu"] = true,
+		["Drifting Avatar of Sand"] = true,
 		["Time-Lord Epochronos"] = true,
+		["Mossheart"] = true,
+		["Rotmaw"] = true,
 		["Antnormi"] = true,
 		["Infinite Chromie"] = true,
 		-- StormwindVault TurtleWOW
