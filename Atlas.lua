@@ -962,7 +962,7 @@ local function Atlas_strsplit(delimiter, subject)
   string.gsub(subject, pattern, function(c) fields[table.getn(fields)+1] = c end)
   return unpack(fields)
 end
-
+--[[
 --Update announcing code taken from pfUI
 local major, minor, fix = Atlas_strsplit(".", tostring(GetAddOnMetadata("Atlas", "Version")))
 
@@ -1052,4 +1052,83 @@ Atlas_updater:SetScript("OnEvent", function()
 		SendChatMessage("Atlas:VERSION:" .. localversion, "CHANNEL", nil, GetChannelName("LFT"))
 	  end
 	end
+  end)
+]]
+
+--Update announcing code taken from pfUI
+local major, minor, fix = Atlas_strsplit(".", tostring(GetAddOnMetadata("Atlas", "Version")))
+
+local alreadyshown = false
+local localversion  = tonumber(major*10000 + minor*100 + fix)
+local remoteversion = tonumber(Atlas_updateavailable) or 0
+local loginchannels = { "BATTLEGROUND", "RAID", "GUILD" }
+local groupchannels = { "BATTLEGROUND", "RAID" }
+
+Atlas_updater = CreateFrame("Frame")
+Atlas_updater:RegisterEvent("CHAT_MSG_ADDON")
+Atlas_updater:RegisterEvent("CHAT_MSG_CHANNEL")
+Atlas_updater:RegisterEvent("PLAYER_ENTERING_WORLD")
+Atlas_updater:RegisterEvent("PARTY_MEMBERS_CHANGED")
+
+Atlas_updater:SetScript("OnEvent", function()
+    if event == "CHAT_MSG_ADDON" and arg1 == "Atlas" then
+        local v, remoteversion = Atlas_strsplit(":", arg2)
+        local remoteversion = tonumber(remoteversion)
+        if remoteversion >= 40000 then remoteversion = 0 end --Block for people using some version from another version of WoW.
+        if v == "VERSION" and remoteversion then
+            if remoteversion > localversion then
+                Atlas_updateavailable = remoteversion
+                if not alreadyshown then
+                    DEFAULT_CHAT_FRAME:AddMessage("|cffbe5eff[Atlas]|r New version available! https://forum.turtle-wow.org/viewtopic.php?t=7958")
+                    alreadyshown = true
+                end
+            end
+        end
+    end
+
+    if event == "CHAT_MSG_CHANNEL" then
+        local _,_,source = string.find(arg4,"(%d+)%.")
+        local _,name = GetChannelName(source)
+        if name == "LFT" then
+            local msg, v, remoteversion = Atlas_strsplit(":", arg1)
+            if msg == "Atlas" then
+                local remoteversion = tonumber(remoteversion) or 0
+                if remoteversion >= 40000 then remoteversion = 0 end --Block for people using some version from another version of WoW.
+                if v == "VERSION" and remoteversion then
+                    if remoteversion > localversion then
+                        Atlas_updateavailable = remoteversion
+                        if not alreadyshown then
+                            DEFAULT_CHAT_FRAME:AddMessage("|cffbe5eff[Atlas]|r New version available! https://forum.turtle-wow.org/viewtopic.php?t=7958")
+                            alreadyshown = true
+                        end
+                    end
+                end
+            end
+        end
+    end
+
+    if event == "PARTY_MEMBERS_CHANGED" then
+        local groupsize = GetNumRaidMembers() > 0 and GetNumRaidMembers() or GetNumPartyMembers() > 0 and GetNumPartyMembers() or 0
+        if ( this.group or 0 ) < groupsize then
+            for _, chan in pairs(groupchannels) do
+                SendAddonMessage("Atlas", "VERSION:" .. localversion, chan)
+            end
+        end
+        this.group = groupsize
+    end
+
+    if event == "PLAYER_ENTERING_WORLD" then
+      if not alreadyshown and localversion < remoteversion then
+        DEFAULT_CHAT_FRAME:AddMessage("|cffbe5eff[Atlas]|r New version available! https://forum.turtle-wow.org/viewtopic.php?t=7958")
+        Atlas_updateavailable = localversion
+        alreadyshown = true
+      end
+
+      for _, chan in pairs(loginchannels) do
+        SendAddonMessage("Atlas", "VERSION:" .. localversion, chan)
+      end
+      if GetChannelName("LFT") ~= 0 then
+        SendChatMessage("Atlas:VERSION:" .. localversion, "CHANNEL", nil, GetChannelName("LFT"))
+      end
+    end
   end)

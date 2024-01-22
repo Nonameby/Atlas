@@ -1,5 +1,13 @@
 AddOn: Atlas
 
+Version: 1.13.2
+Last Update: 01(January).22(22nd).2024
+Error messages should be fixed.
+Shouldn't be any problems with other AddOns that use Ace Library.
+need testing.
+still have problems with AtlasLoot.
+
+
 Version: 1.13.1
 Last Update: 11(November).02(2nd).2023
 

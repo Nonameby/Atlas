@@ -1,14 +1,14 @@
 ## Interface: 11200
-## Title: Atlas |cff7fff7f -Ace2-|r
-## Notes: Atlas: instance Map Browser
+## Title: Atlas |cff7fff7f TurtleWOW|r
+## Notes: Atlas: instance Map Browser. January 22nd, 2024
 ## Notes-deDE: Instanzkarten-Browser
 ## Notes-frFR: Navigateur de cartes d'instances
 ## Notes-zhTW: 副本地圖集, 瀏覽各副本、戰場地圖以及飛行地圖
 ## Notes-zhCN: 副本地图浏览器
 ## Notes-esES: Navegador de Mapas de Mazmorras
 ## Notes-ruRU: Обозреватель подземелий
-## Version: 1.13.1
-## X-Date: 02.11.2023
+## Version: 1.13.2
+## X-Date: 22.01.2024
 ## Author: Shahopriest
 ## X-Email: m4r3lk4@gmail.com
 ## X-Website: https://forum.turtle-wow.org/viewtopic.php?t=7958
@@ -21,11 +21,9 @@ Libs\AceLibrary\AceLibrary.lua
 Libs\AceOO-2.0\AceOO-2.0.lua
 Libs\AceAddon-2.0\AceAddon-2.0.lua
 Libs\AceLocale-2.2\AceLocale-2.2.lua
-Libs\Babble-Boss-2.2\Babble-Boss-2.2.lua
 Libs\Babble-Class-2.2\Babble-Class-2.2.lua
 Libs\Babble-Faction-2.2\Babble-Faction-2.2.lua
 Libs\Babble-ItemSet-2.2\Babble-ItemSet-2.2.lua
-Libs\Babble-Zone-2.2\Babble-Zone-2.2.lua
 
 Locale\Atlas-enUS.lua
 Locale\Atlas-deDE.lua
