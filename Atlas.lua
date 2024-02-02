@@ -383,14 +383,14 @@ ATLAS_OLD_ZONE = false;
 --Initializes everything relating to saved variables and data in other lua files
 --This should be called ONLY when we're sure our variables are in memory
 function Atlas_Init()
-
+	--[[ TurtleWOW fix for zUI bottom right action bar bug disable this part
 	--fix for certain UI elements that appear on top of the Atlas window
 	MultiBarBottomLeft:SetFrameStrata("MEDIUM");
 	MultiBarBottomRight:SetFrameStrata("MEDIUM");
 	MultiBarLeft:SetFrameStrata("MEDIUM");
 	MultiBarRight:SetFrameStrata("MEDIUM");
 	MainMenuBarOverlayFrame:SetFrameStrata("MEDIUM");
-
+	--]]
 	
 	--clear saved vars for a new version (or a new install!)
 	if ( AtlasOptions == nil or AtlasOptions["AtlasVersion"] ~= ATLAS_VERSION) then

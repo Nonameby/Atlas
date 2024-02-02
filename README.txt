@@ -1,6 +1,10 @@
 AddOn: Atlas
 
 Version: 1.13.2
+Last Update: 02(February).02(2nd).2024
+TEMPORARY fix for zUI bugging right bottom actionbar. without update download announcement in chat.
+
+Version: 1.13.2
 Last Update: 01(January).22(22nd).2024
 Error messages should be fixed.
 Shouldn't be any problems with other AddOns that use Ace Library.
